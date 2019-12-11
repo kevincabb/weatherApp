@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+
+  <title>Weather App</title>
+</head>
+
+<body>
+  <div id="hero-1" class="container-fluid">
+    <div class="row pt-4">
+      <div class="col-12 d-flex justify-content-center">
+        <h2>Whether The Weather Is Nice</h2>
+      </div>
+    </div>
+    <div class="row d-flex justify-content-center pt-3">
+      <div class="col-12 col-lg-1 d-flex justify-content-center pt-4 order-12 order-lg-0">
+        <img id="delete" src="https://img.icons8.com/color/64/000000/minus.png">
+      </div>
+      <div class="col-4 col-lg-2 d-flex justify-content-end order-2">
+        <a>
+          <img id="previous" src="https://img.icons8.com/carbon-copy/100/000000/back.png">
+        </a>
+      </div>
+      <div class="col-4 col-lg-2 d-flex justify-content-center align-items-center order-3 px-0">
+        <h3 class="current">Current City</h3>
+      </div>
+      <div class="col-4 col-lg-2 d-flex justify-content-start order-4">
+        <a>
+          <img id="next" src="https://img.icons8.com/carbon-copy/100/000000/forward.png">
+        </a>
+      </div>
+      <div class="col-12 col-lg-1 d-flex justify-content-center pt-4 order-0 order-lg-12">
+        <!-- Button trigger modal -->
+        <button type="button" class="btn" data-toggle="modal" data-target="#exampleModal">
+            <img id="add" src="https://img.icons8.com/color/64/000000/plus--v1.png">
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+          aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Enter City/Zip Code</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <input type="text" placeholder="city">
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Search</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 d-flex justify-content-center">
+        <span>
+          <h4 id="currentTemp">50</h4>
+        </span>
+        <span>
+          <h4>°F</h4>
+        </span>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12  d-flex justify-content-center">
+        <span>
+          <h4 id="currentLow">50</h4>
+        </span>
+        <span>
+          <h4>°F</h4>
+        </span>
+        <span>
+          <h4>/</h4>
+        </span>
+        <span>
+          <h4 id="currentHigh">50</h4>
+        </span>
+        <span>
+          <h4>°F</h4>
+        </span>
+      </div>
+    </div>
+
+    <div class="container pt-5">
+      <div class="row d-flex justify-content-between">
+        <div class="col-12 col-lg-1"></div>
+        <div class="col-12 col-lg-2 d-flex justify-content-center">
+          <div class="card card-size">
+            <img src="images/sunny (2).png" class="card-img-top" alt="...">
+            <div class="card-body p-0">
+              <div class="row">
+                <div class="col-12">
+                  <div class="row">
+                    <div class="col-12 d-flex justify-content-center">
+                      <p id="date1">DATE</p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-12 d-flex justify-content-center">
+                      <span>
+                        <p id="date1Low">LOW</p>
+                      </span>
+                      <span>
+                        <p> / </p>
+                      </span>
+                      <span>
+                        <p id="date1High">HIGH</p>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-2 d-flex justify-content-center py-2 py-lg-0">
+          <div class="card card-size">
+            <img src="images/sunny (2).png" class="card-img-top" alt="...">
+            <div class="card-body p-0">
+              <div class="row">
+                <div class="col-12">
+                  <div class="row">
+                    <div class="col-12 d-flex justify-content-center">
+                      <p id="date2">DATE</p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-12 d-flex justify-content-center">
+                      <span>
+                        <p id="date2Low">LOW</p>
+                      </span>
+                      <span>
+                        <p> / </p>
+                      </span>
+                      <span>
+                        <p id="date2High">HIGH</p>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-2 d-flex justify-content-center">
+          <div class="card card-size">
+            <img src="images/sunny (2).png" class="card-img-top" alt="...">
+            <div class="card-body p-0">
+              <div class="row">
+                <div class="col-12">
+                  <div class="row">
+                    <div class="col-12 d-flex justify-content-center">
+                      <p id="date3">DATE</p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-12 d-flex justify-content-center">
+                      <span>
+                        <p id="date3Low">LOW</p>
+                      </span>
+                      <span>
+                        <p> / </p>
+                      </span>
+                      <span>
+                        <p id="date3High">HIGH</p>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-2 d-flex justify-content-center py-2 py-lg-0">
+          <div class="card card-size">
+            <img src="images/sunny (2).png" class="card-img-top" alt="...">
+            <div class="card-body p-0">
+              <div class="row">
+                <div class="col-12">
+                  <div class="row">
+                    <div class="col-12 d-flex justify-content-center">
+                      <p id="date4">DATE</p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-12 d-flex justify-content-center">
+                      <span>
+                        <p id="date4Low">LOW</p>
+                      </span>
+                      <span>
+                        <p> / </p>
+                      </span>
+                      <span>
+                        <p id="date4High">HIGH</p>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-2 d-flex justify-content-center">
+          <div class="card card-size">
+            <img src="images/sunny (2).png" class="card-img-top" alt="...">
+            <div class="card-body p-0">
+              <div class="row">
+                <div class="col-12">
+                  <div class="row">
+                    <div class="col-12 d-flex justify-content-center">
+                      <p id="date5">DATE</p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-12 d-flex justify-content-center">
+                      <span>
+                        <p id="date5Low">HIGH</p>
+                      </span>
+                      <span>
+                        <p> / </p>
+                      </span>
+                      <span>
+                        <p id="date5High">LOW</p>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-1"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>

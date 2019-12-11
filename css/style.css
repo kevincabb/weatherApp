@@ -1,0 +1,16 @@
+#hero-1{
+    background: url(/images/glenn-carstens-peters-14-F8DTBKpU-unsplash.jpg);
+    background-size: cover;
+    height: 250vh;
+    width: 100%;
+}
+
+p{
+    font-size: 20px;
+    margin: 0px;
+}
+
+.card-size{
+    height: 220px;
+    width: 160px;
+}
