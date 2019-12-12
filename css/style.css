@@ -14,3 +14,11 @@ p{
     height: 220px;
     width: 160px;
 }
+
+.background-opacity{
+    opacity: 0;
+}
+
+.button-opacity{
+    opacity: 1;
+}

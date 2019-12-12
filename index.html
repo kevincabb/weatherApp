@@ -26,22 +26,18 @@
         <img id="delete" src="https://img.icons8.com/color/64/000000/minus.png">
       </div>
       <div class="col-4 col-lg-2 d-flex justify-content-end order-2">
-        <a>
-          <img id="previous" src="https://img.icons8.com/carbon-copy/100/000000/back.png">
-        </a>
+        <input type="image" id="previous" src="https://img.icons8.com/carbon-copy/100/000000/back.png" alt=".." />
       </div>
       <div class="col-4 col-lg-2 d-flex justify-content-center align-items-center order-3 px-0">
-        <h3 class="current">Current City</h3>
+        <h3 id="current">Current City</h3>
       </div>
       <div class="col-4 col-lg-2 d-flex justify-content-start order-4">
-        <a>
-          <img id="next" src="https://img.icons8.com/carbon-copy/100/000000/forward.png">
-        </a>
+        <input type="image" id="next" src="https://img.icons8.com/carbon-copy/100/000000/forward.png" alt=".." />
       </div>
       <div class="col-12 col-lg-1 d-flex justify-content-center pt-4 order-0 order-lg-12">
         <!-- Button trigger modal -->
         <button type="button" class="btn" data-toggle="modal" data-target="#exampleModal">
-            <img id="add" src="https://img.icons8.com/color/64/000000/plus--v1.png">
+          <img id="add" src="https://img.icons8.com/color/64/000000/plus--v1.png">
         </button>
 
         <!-- Modal -->
@@ -56,11 +52,11 @@
                 </button>
               </div>
               <div class="modal-body">
-                <input type="text" placeholder="city">
+                <input type="text" placeholder="city" id="cityInput">
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Search</button>
+                <button id="search" type="button" class="btn btn-primary">Search</button>
               </div>
             </div>
           </div>
@@ -102,7 +98,7 @@
         <div class="col-12 col-lg-1"></div>
         <div class="col-12 col-lg-2 d-flex justify-content-center">
           <div class="card card-size">
-            <img src="images/sunny (2).png" class="card-img-top" alt="...">
+            <img id="day1pic" src="images/sunny (2).png" class="card-img-top" alt="...">
             <div class="card-body p-0">
               <div class="row">
                 <div class="col-12">
@@ -131,7 +127,7 @@
         </div>
         <div class="col-12 col-lg-2 d-flex justify-content-center py-2 py-lg-0">
           <div class="card card-size">
-            <img src="images/sunny (2).png" class="card-img-top" alt="...">
+            <img id="day2pic" src="images/sunny (2).png" class="card-img-top" alt="...">
             <div class="card-body p-0">
               <div class="row">
                 <div class="col-12">
@@ -160,7 +156,7 @@
         </div>
         <div class="col-12 col-lg-2 d-flex justify-content-center">
           <div class="card card-size">
-            <img src="images/sunny (2).png" class="card-img-top" alt="...">
+            <img id="day3pic" src="images/sunny (2).png" class="card-img-top" alt="...">
             <div class="card-body p-0">
               <div class="row">
                 <div class="col-12">
@@ -189,7 +185,7 @@
         </div>
         <div class="col-12 col-lg-2 d-flex justify-content-center py-2 py-lg-0">
           <div class="card card-size">
-            <img src="images/sunny (2).png" class="card-img-top" alt="...">
+            <img id="day4pic" src="images/sunny (2).png" class="card-img-top" alt="...">
             <div class="card-body p-0">
               <div class="row">
                 <div class="col-12">
@@ -218,7 +214,7 @@
         </div>
         <div class="col-12 col-lg-2 d-flex justify-content-center">
           <div class="card card-size">
-            <img src="images/sunny (2).png" class="card-img-top" alt="...">
+            <img id="day5pic" src="images/sunny (2).png" class="card-img-top" alt="...">
             <div class="card-body p-0">
               <div class="row">
                 <div class="col-12">
