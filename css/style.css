@@ -22,3 +22,10 @@ p{
 .button-opacity{
     opacity: 1;
 }
+
+.banner{
+    background-color: azure;
+    opacity: .4;
+    border: solid 3px;
+    border-block-color: black;
+}
