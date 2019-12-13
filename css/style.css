@@ -29,3 +29,9 @@ p{
     border: solid 3px;
     border-block-color: black;
 }
+.banner2{
+    background-color: azure;
+    opacity: .7;
+    border: solid 3px;
+    border-block-color: black;
+}
